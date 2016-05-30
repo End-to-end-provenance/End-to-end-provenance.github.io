@@ -5,7 +5,7 @@ Technology continues to change the way that scientists work. Nearly
 all scientific data are analyzed with computers and increasingly data
 are collected directly in electronic form. A good example is provided
 by sensor networks, which may utilize electronic sensors and wireless
-networks to collect vast quantities of data at a very fast
+networks to collect vast quantities of data at very fast
 rates. Scientific programs, ranging from Excel spreadsheets to
 supercomputer applications, manipulate the collected data to produce
 scientific results. Scientists can then disseminate both the raw and
