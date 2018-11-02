@@ -34,27 +34,10 @@
 
 <p>In this project we are developing tools that collect and use provenance for the R statistical language. Provenance is collected as an R script executes or during an R console session and is stored in an <a href="prov-json-extension.pdf">extended PROV-JSON</a> format. Applications then use the provenance to perform tasks that support scientists in their work.</p>
 
+
 <h2>Software Tools</h2>
 
-<p>Our tools are implemented as R packages. We recommend installing them from GitHub using the install_github function in the devtools package:</p>
-
-<ul>
-<li><strong>rdtLite:</strong> <code>install_github("End-to-end-provenance/rdtLite")</code></li>
-<li><strong>rdt:</strong> <code>install_github("End-to-end-provenance/rdt")</code></li>
-<li><strong>provViz:</strong> <code>install_github("End-to-end-provenance/provViz")</code></li>
-<li><strong>RClean:</strong> <code>install_github("End-to-end-provenance/RClean")</code></li>
-<li><strong>provDebugR:</strong> <code>install_github("End-to-end-provenance/provDebugR")</code></li>
-</ul>
-
-<p>Note: RClean and provDebugR both require the provParseR and provGraphR packages. If these do not install automatically they may be installed as follows:</p>
-
-<ul>
-<li><strong>provParseR:</strong> <code>install_github("End-to-end/provParseR")</code></li>
-<li><strong>provGraphR:</strong> <code>install_github("End-to-end/provGraphR")</code></li>
-</ul>
-
-
-<p>Please see below for a brief overview of these tools. Additional information may be found in the README files on the various repositories. For details on individual functions, please see the man pages for each package. Note that exported functions generally begin with "prov." to avoid confusion with variable or function names in your scripts or in other libraries.</p>
+<p>Please see below for a brief description of our tools. Additional information may be found in the README files on the various repositories. For details on individual functions, please see the man pages for each package. Note that exported functions generally begin with "prov." to avoid confusion with variable or function names in your scripts or in other libraries.</p>
 
 <ul>
 
@@ -62,53 +45,38 @@
 
 <li><strong>rdt</strong> is the research version of our provenance collection tool.  It includes all of the functions and functionality of rdtLite and, in addition, collects provenance inside user functions and control constructs.  It does this by creating and executing an annotated version of the original R script.  While this works in most cases, we’ve found that it can lead to problems in cases of deeply nested functions and control constructs, so we are working on a different solution that will use the R trace function to collect provenance inside functions.</li>
 
-<li><strong>provViz</strong> is a visualization tool, written in Java, that allows you to view and query the provenance graph directly.</li>
+<li><strong>provViz</strong> provides an R interface to a visualization tool, written in Java, that allows you to view and query the provenance graph directly.  You will need to have Java installed for this to work.</li>
 
 <li><strong>RClean</strong> uses the provenance collected by rdtLite or rdt to create a simplified version of the original R script that contains only those statements needed to produce a specified result.</li>
 
-<li><strong>provDebugR</strong> uses the provenance collected by rdtLite or rdt to support “post-mortem” analysis and debugging of an R script without the need to set breakpoints or insert print statements and rerun the script.</li>
+<li><strong>provDebugR</strong> uses the provenance collected by rdtLite or rdt to support time-traveling debugging of an R script without the need to set breakpoints or insert print statements and rerun the script.</li>
 
 </ul>
 
+
+<h2>Installation</h2>
+
+<p>Our tools are implemented as R packages. We recommend installing them from GitHub using the install_github function in the devtools package:</p>
+
+<ul>
+<li><strong>rdtLite:</strong> <code>install_github("End-to-end-provenance/rdtLite")</code></li>
+<li><strong>rdt:</strong> <code>install_github("End-to-end-provenance/rdt")</code></li>
+<li><strong>provViz:</strong> <code>install_github("End-to-end-provenance/provViz")</code></li>
+<li><strong>RClean:</strong> <code>install_github("ProvTools/RClean")</code></li>
+<li><strong>provDebugR:</strong> <code>install_github("End-to-end-provenance/provDebugR")</code></li>
+</ul>
+
+<p>Note: RClean and provDebugR both require the provParseR and provGraphR packages. If these do not install automatically they may be installed as follows:</p>
+
+<ul>
+<li><strong>provParseR:</strong> <code>install_github("End-to-end-provenance/provParseR")</code></li>
+<li><strong>provGraphR:</strong> <code>install_github("End-to-end-provenance/provGraphR")</code></li>
+</ul>
+
+
 <h2>Getting Started</h2>
 
-<p>This section describes how to get started with <strong>rdtLite</strong>. Please see above for instructions on how to install <strong>rdtLite</strong> with devtools. Note that <strong>rdtLite</strong> currently requires R 3.5.0 (or later) and the following R packages: curl, devtools, digest, ggplot2, grDevices, gtools, jsonlite, knitr, methods, stringr, tools, utils, XML.</p>
-
-<p>The provenance collected by <strong>rdtLite</strong> is stored in an <a href="prov-json-extension.pdf">extended PROV-JSON</a> format. For immediate use it may be retrieved from memory using the prov.json function. For later use the provenance is also written to the file prov.json. This file and associated files are written by default to the R session temporary directory. You may change this location by (1) using the optional parameter prov.dir in the prov.run or prov.init functions, or (2) setting the prov.dir option (e.g. by using the R options command or editing the Rprofile.site or .Rprofile file). If prov.dir is set to ".", the current working directory is used.<p>
-
-<p>rdtLite provides two modes of operation. In script mode, the prov.run function is used to execute a script and collect provenance as the script executes. In console mode, provenance is collected during a console session. Here the prov.init function is used to initiate provenance collection, prov.save is used to save provenance collected since the last time prov.save was used, and prov.quit is used to save and close the provenance file.</p>
-
-<p>Simple data values are stored in the prov-json file. "Snapshots" of complex data values such as data frames are optionally stored (wholly or in part) by adjusting the value of the parameter snapshot.size in prov.run or prov.init.</p>
-
-<p>Once installed, use the R library command to load <strong>rdtLite</strong>:</p>
-
-<p><code>library(rdtLite)</code></p>
-
-<p>To capture provenance for an R script, set the working directory and enter the following:</p>
-
-<p><code>prov.run("my-script.R")</code></p>
-
-<p>where "my-script.R" is an R script in the working directory. The prov.run command will execute the script and save the provenance in a subdirectory called "prov_my-script" under the current provenance directory (see above).</p>
-
-<p>To capture provenance for a console session, enter the following:</p>
-
-<p><code>prov.init()</code></p>
-
-<p>and enter commands at the R console. To save the provenance collected so far to a subdirectory called "prov_console" under the current provenance directory (see above), enter the following:</p>
-
-<p><code>prov.save()</code></p>
-
-<p>To save the provenance and quit provenance collection, enter the following:</p>
-
-<p><code>prov.quit()</code></p>
-
-<p>Note that the various optional parameters of the prov.run and prov.init functions may be used to control where the provenance is stored and whether earlier provenance at the same location should be overwritten.</p>
-
-<p>To view and query the provenance graph directly, load the <strong>provViz</strong> package and enter the following:</p>
-
-<p><code>prov.visualize()</code></p>
-
-<p>Note that (by default) <strong>provViz</strong> and other applications will attempt to use the provenance stored in memory from the last execution of prov.run or prov.init.</p>
+<p>We recommend starting with the <strong>rdtLite</strong> package, which collects enough provenance for most purposes. For details on how to load and use <strong>rdtLite</strong>, please see the README file for the <strong>rdtLite</strong> repository. Applications such as <strong>provViz</strong> can use provenance stored in memory from the most recent script execution or console session with <strong>rdtLite</strong>, or use provenance from an earlier script execution or console session stored in a prov.json file.</p>
 
 <h2>Notes for Developers</h2>
 
@@ -125,6 +93,7 @@
 <li>We welcome comments on the <a href="prov-json-extension.pdf">extended PROV-JSON</a> format used by our provenance collection tools and applications</li>
 
 </ul>
+
 
 <h2>Active Contributors</h2>
 
@@ -147,6 +116,7 @@
 <li><a href="https://jwons.github.io/">Joseph Wonsil</a>, Carthage College</li>
 
 </ul>
+
 
 <h2>Past Contributors</h2>
 
