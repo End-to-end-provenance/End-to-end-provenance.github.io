@@ -33,7 +33,7 @@ We recommend starting with the *rdtLite* package, which collects enough provenan
 
 ## Notes for Developers
 
-* The source code for *rdt* and *rdtLite* is contained in the *RDataTracker* repository (https://github.com/End-to-end-provenance/RDataTracker). A script is run nightly to create separate repos for each tool to facilitate GitHub installations.  If you’d like to see the long history of code development and issues for *rdt* and *rdtLite*, or enter new issues, please see the *RDataTracker* repository.
+* The source code for *rdt* and *rdtLite* is contained in the *RDataTracker* [repository](https://github.com/End-to-end-provenance/RDataTracker). A script is run nightly to create separate repos for each tool to facilitate GitHub installations.  If you’d like to see the long history of code development and issues for *rdt* and *rdtLite*, or enter new issues, please see the *RDataTracker* repository.
 
 * The *RDataTracker* repository contains the necessary files to build and install *rdt* and *rdtLite* and to run extensive regression tests using Apache Ant. To do this, clone the *RDataTracker* repo and see the file README_Build_and_Test.txt.
 
@@ -41,4 +41,4 @@ We recommend starting with the *rdtLite* package, which collects enough provenan
 
 * The *provGraphR* package creates an adjacency matrix from the provenance object created by provParseR.  The adjacency matrix can then be used to quickly traverse the provenance graph. This package supports other packages and is not intended to be used directly.
 
-* We welcome comments on the [extended PROV-JSON](prov-json-extension.pdf) format used by our provenance collection tools and applications
+* We welcome comments on the [extended PROV-JSON](https://github.com/End-to-end-provenance/ExtendedProvJson/blob/master/JSON-format.md) format used by our provenance collection tools and applications

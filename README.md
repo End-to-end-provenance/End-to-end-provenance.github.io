@@ -7,7 +7,7 @@ Provenance is the history of an item of data from its creation to its present st
 ## Software Tools
 
 * [R Tools](https://github.com/End-to-end-provenance/End-to-end-provenance.github.io/blob/master/RTools.md): Provenance tools for the R statistical language
-* [Extended Prov-JSON](https://github.com/End-to-end-provenance/ExtendedProvJson/blob/master/README.md): An extension of the W3C PROV-JSON standard for fine-grained provenance
+* [Extended PROV-JSON](https://github.com/End-to-end-provenance/ExtendedProvJson/blob/master/README.md): An extension of the W3C PROV-JSON standard for fine-grained provenance
 
 ## Active Contributors
 
@@ -46,6 +46,7 @@ Provenance is the history of an item of data from its creation to its present st
 * Sofiya Taskova, Mount Holyoke College
 * Cory Teshera-Sterne, Mount Holyoke Colege
 * Morgan Vigil, Westmont College
+* Mohammed Rahman, Indian Institutes of Technology
 * Yujia Zhou, Dickinson College
 
 ## Acknowledgments
