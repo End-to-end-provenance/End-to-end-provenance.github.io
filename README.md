@@ -8,6 +8,7 @@ Provenance is the history of an item of data from its creation to its present st
 
 * [R Tools](https://github.com/End-to-end-provenance/End-to-end-provenance.github.io/blob/master/RTools.md): Provenance tools for the R statistical language
 * [Extended PROV-JSON](https://github.com/End-to-end-provenance/ExtendedProvJson/blob/master/README.md): An extension of the W3C PROV-JSON standard for fine-grained provenance
+* [CamFlow](http://camflow.org/): A practical whole-system provenance capture mechanism for the Linux OS
 
 ## Active Contributors
 
@@ -16,6 +17,8 @@ Provenance is the history of an item of data from its creation to its present st
 * [Aaron Ellison](https://harvardforest.fas.harvard.edu/aaron-ellison), Harvard University
 
 * [Elizabeth Fong](https://www.linkedin.com/in/elizabethfongwm). Mount Holyoke College
+
+* [Xueyuan (Michael) Han](https://scholar.harvard.edu/han/home), Harvard University
 
 * [Matthew Lau](https://harvardforest.fas.harvard.edu/researchers/8438), Harvard University
 
