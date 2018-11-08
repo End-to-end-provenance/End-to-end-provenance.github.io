@@ -46,15 +46,15 @@ Provenance is the history of an item of data from its creation to its present st
 
 ## Publications
 
-* Xueyuan Han, Thomas Pasquier, and Margo Seltzer. 2018. *Provenance-based Intrusion Detection: Opportunities and Challenges.* In Workshop on the Theory and Practice of Provenance (TaPP’18). USENIX.
-* Barbara Lerner, Emery Boose, and Luis Perez. 2018. *Using Introspection to Collect Provenance in R.* Informatics, 5, 12.
-* Thomas Pasquier, Xueyuan Han, Thomas Moyer, Adam Bates, Olivier Hermant, David Eyers, Jean Bacon, and Margo Seltzer. 2018. *Runtime Analysis of Whole-System Provenance.* In Conference on Computer and Communications Security (CCS'18). ACM.
-* Thomas Pasquier, Matthew Lau, Xueyuan Han, Elizabeth Fong, Barbara Lerner, Emery Boose, Merce Crosas, Aaron Ellison, and Margo Seltzer. 2018. *Sharing and Preserving Computational Analyses for Posterity with encapsulator.* IEEE Computing in Science and Engineering (CiSE).
-* Emery Boose and Barbara Lerner. 2017. *Replication of Data Analyses: Provenance in R.* In Stepping in the Same River Twice: Replication in Biological Research, edited by A. Shavit and A. M. Ellison. Yale University Press.
-* Xueyuan Han, Thomas Pasquier, Tanvi Ranjan, Mark Goldstein, and Margo Seltzer. 2017. *FRAPpuccino: Fault-detection through Runtime Analysis of Provenance.* In Workshop on Hot Topics in Cloud Computing (HotCloud'17). USENIX.
-* Thomas Pasquier, Xueyuan Han, Mark Goldstein, Thomas Moyer, David Eyers, Margo Seltzer, and Jean Bacon. 2017. *Practical Whole-System Provenance Capture.* In Symposium on Cloud Computing (SoCC’17). ACM.
-* Thomas Pasquier, Matthew K. Lau, Ana Trisovic, Emery R. Boose, Ben Couturier, Mercè Crosas, Aaron M. Ellison, Valerie Gibson, Chris R. Jones, and Margo Seltzer. 2017. *If these data could talk.* Nature Scientific Data, 4.
-* Thomas Pasquier, Jatinder Singh, Julia Powles, David Eyers, Margo Seltzer, and Jean Bacon. 2017. *Data provenance to audit compliance with privacy policy in the Internet of Things.* Springer Personal and Ubiquitous Computing.
+* Xueyuan Han, Thomas Pasquier, and Margo Seltzer. 2018. [Provenance-based Intrusion Detection: Opportunities and Challenges](https://www.usenix.org/system/files/conference/tapp2018/tapp2018-paper-han.pdf). In Workshop on the Theory and Practice of Provenance (TaPP’18). USENIX.
+* Barbara Lerner, Emery Boose, and Luis Perez. 2018. [Using Introspection to Collect Provenance in R](https://www.mdpi.com/2227-9709/5/1/12). Informatics, 5, 12.
+* Thomas Pasquier, Xueyuan Han, Thomas Moyer, Adam Bates, Olivier Hermant, David Eyers, Jean Bacon, and Margo Seltzer. 2018. [Runtime Analysis of Whole-System Provenance](https://ieeexplore.ieee.org/document/8409369). In Conference on Computer and Communications Security (CCS'18). ACM.
+* Thomas Pasquier, Matthew Lau, Xueyuan Han, Elizabeth Fong, Barbara Lerner, Emery Boose, Merce Crosas, Aaron Ellison, and Margo Seltzer. 2018. [Sharing and Preserving Computational Analyses for Posterity with encapsulator](https://ieeexplore.ieee.org/document/8409369). IEEE Computing in Science and Engineering (CiSE).
+* Emery Boose and Barbara Lerner. 2017. *Replication of Data Analyses: Provenance in R*. In Stepping in the Same River Twice: Replication in Biological Research, edited by A. Shavit and A. M. Ellison. Yale University Press.
+* Xueyuan Han, Thomas Pasquier, Tanvi Ranjan, Mark Goldstein, and Margo Seltzer. 2017. [FRAPpuccino: Fault-detection through Runtime Analysis of Provenance](https://www.usenix.org/system/files/conference/hotcloud17/hotcloud17-paper-han.pdf). In Workshop on Hot Topics in Cloud Computing (HotCloud'17). USENIX.
+* Thomas Pasquier, Xueyuan Han, Mark Goldstein, Thomas Moyer, David Eyers, Margo Seltzer, and Jean Bacon. 2017. [Practical Whole-System Provenance Capture](https://dl.acm.org/citation.cfm?id=3129249). In Symposium on Cloud Computing (SoCC’17). ACM.
+* Thomas Pasquier, Matthew K. Lau, Ana Trisovic, Emery R. Boose, Ben Couturier, Mercè Crosas, Aaron M. Ellison, Valerie Gibson, Chris R. Jones, and Margo Seltzer. 2017. [If these data could talk](https://www.nature.com/articles/sdata2017114). Nature Scientific Data, 4.
+* Thomas Pasquier, Jatinder Singh, Julia Powles, David Eyers, Margo Seltzer, and Jean Bacon. 2017. [Data provenance to audit compliance with privacy policy in the Internet of Things](https://link.springer.com/article/10.1007/s00779-017-1067-4). Springer Personal and Ubiquitous Computing.
 
 ## Acknowledgments
 
