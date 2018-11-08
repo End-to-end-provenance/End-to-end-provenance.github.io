@@ -35,7 +35,7 @@ We recommend starting with the *rdtLite* package, which collects enough provenan
 
 * The source code for *rdt* and *rdtLite* is contained in the *RDataTracker* [repository](https://github.com/End-to-end-provenance/RDataTracker). A script is run nightly to create separate repos for each tool to facilitate GitHub installations.  If you’d like to see the long history of code development and issues for *rdt* and *rdtLite*, or enter new issues, please see the *RDataTracker* repository.
 
-* The *RDataTracker* repository contains the necessary files to build and install *rdt* and *rdtLite* and to run extensive regression tests using Apache Ant. To do this, clone the *RDataTracker* repo and see the file README_Build_and_Test.txt.
+* The *RDataTracker* repository contains the necessary files to build and install *rdt* and *rdtLite* and to run extensive regression tests using Apache Ant. To do this, clone the *RDataTracker* repo and see the file README_Build_and_Test.md.
 
 * The *provParseR* package facilitates access to the provenance information collected by rdt and rdtLite. The prov.parse function accepts this information as a string or file in extended PROV-JSON format and returns it as an R object. Access functions then extract the desired information from this object and returns it as a data frame. This package supports other packages and is not intended to be used directly.
 
