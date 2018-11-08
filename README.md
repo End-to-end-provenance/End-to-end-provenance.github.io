@@ -58,6 +58,8 @@ Provenance is the history of an item of data from its creation to its present st
 
 ## Acknowledgments
 
-This work was supported by NSF grants DEB-1237491, DBI-1459519, and SSI-1450277, the Charles Bullard Fellowship at Harvard University, and a faculty fellowship from Mount Holyoke College, and is a contribution from the Harvard Forest Long-Term Ecological Research (LTER) program.
+R tool development started in 2013 at the Harvard Forest and was supported by NSF grants DEB-1237491, DBI-1459519, and SSI-1450277, a Charles Bullard Fellowship at Harvard University, and a faculty fellowship from Mount Holyoke College, and is a contribution from the Harvard Forest Long-Term Ecological Research (LTER) program. This project benefited greatly from earlier work by Lee Osterweil, Lori Clarke, and Alexander Wise at the University of Massachusetts Amherst.
+
+CamFlow development started in 2014 at the University of Cambridge’s Opera Research Group under grant EPSRC EP/K011510/1. Later development was supported by Harvard University’s Center for Research on Computation and Society under NSF grant SSI-1450277. We also acknowledge the support of the University of Cambridge’s Digital Technology Group and the University of Bristol Cyber Security Group.
 
 Tree silhouette from: http://www.vinylsilhouettes.com
