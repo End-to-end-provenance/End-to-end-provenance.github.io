@@ -6,6 +6,8 @@ Our tools for the R statistical language are part of a larger project on [End-to
 
 * [*rdt*](https://github.com/End-to-end-provenance/rdt/blob/master/README.md) is the research version of our provenance collection tool.  It includes all of the functions and functionality of rdtLite and, in addition, collects provenance inside user functions and control constructs.  It does this by creating and executing an annotated version of the original R script.  While this works in most cases, we’ve found that it can lead to problems in cases of deeply nested functions and control constructs, so we are working on a different solution that will use the R trace function to collect provenance inside functions.
 
+* [*provSummarizeR*](https://github.com/End-to-end-provenance/provSummarizeR/blob/master/README.md) creates a concise high-level summary of the provenance collected by rdtLite or rdt, including information about computing environment, loaded libraries, sourced scripts, and inputs & outputs.
+
 * [*provViz*](https://github.com/End-to-end-provenance/provViz/blob/master/README.md) provides an R interface to a visualization tool, written in Java, that allows you to view and query the provenance graph directly.  You will need to have Java installed for this to work.
 
 * [*RClean*](https://github.com/ProvTools/Rclean/blob/master/README.md) uses the provenance collected by rdtLite or rdt to create a simplified version of the original R script that contains only those statements needed to produce a specified result.
@@ -18,18 +20,19 @@ Our tools are implemented as R packages. We recommend installing them from GitHu
 
 * *rdtLite:* `install_github("End-to-end-provenance/rdtLite")`
 * *rdt:* `install_github("End-to-end-provenance/rdt")`
+* *provSummarizeR:* `install_github("End-to-end-provenance/provSummarizeR")`
 * *provViz:* `install_github("End-to-end-provenance/provViz")`
 * *RClean:* `install_github("ProvTools/RClean")`
 * *provDebugR:* `install_github("End-to-end-provenance/provDebugR")`
 
-Note: RClean and provDebugR both require the provParseR and provGraphR packages. If these do not install automatically they may be installed as follows:
+Note: provSummarizeR requires the provParseR package. RClean and provDebugR require both provParseR and provGraphR. If these do not install automatically they may be installed as follows:
 
 * *provParseR:* `install_github("End-to-end-provenance/provParseR")`
 * *provGraphR:* `install_github("End-to-end-provenance/provGraphR")`
 
 ## Getting Started
 
-We recommend starting with the *rdtLite* package, which collects enough provenance for most purposes. For details on how to load and use *rdtLite*, please see the README file for the *rdtLite* repository. Applications such as *provViz* can use provenance stored in memory from the most recent script execution or console session with *rdtLite*, or use provenance from an earlier script execution or console session stored in a prov.json file.
+We recommend starting with the *rdtLite* package, which collects enough provenance for most purposes. For details on how to load and use *rdtLite*, please see the README file for the *rdtLite* repository. Applications such as *provSummarizeR* and *provViz* can use provenance stored in memory from the most recent script execution or console session with *rdtLite*, or use provenance from an earlier script execution or console session stored in a prov.json file.
 
 ## Notes for Developers
 
