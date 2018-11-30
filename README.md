@@ -19,7 +19,7 @@ Provenance is the history of an item of data from its creation to its present st
 * [Matthew Lau](https://harvardforest.fas.harvard.edu/researchers/8438), Harvard University
 * [Barbara Lerner](https://www.mtholyoke.edu/%7Eblerner/), Mount Holyoke College
 * [Thomas Pasquier](https://www.cl.cam.ac.uk/%7Etfjmp2/), University of Bristol
-* [Margo Seltzer](https://www.eecs.harvard.edu/margo/), University of British Columbia
+* [Margo Seltzer](https://www.seltzer.com/margo/), University of British Columbia
 * [Joseph Wonsil](https://jwons.github.io/), Carthage College
 
 ## Past Contributors
