@@ -10,25 +10,28 @@ Our tools for the R statistical language are part of a larger project on [End-to
 
 * [*provViz*](https://github.com/End-to-end-provenance/provViz/blob/master/README.md) provides an R interface to a visualization tool, written in Java, that allows you to view and query the provenance graph directly.  You will need to have Java installed for this to work.
 
-* [*provClean*](https://github.com/End-to-end-provenance/provClean/blob/master/README.md) uses the provenance collected by rdtLite or rdt to create a simplified version of the original R script that contains only those statements needed to produce a specified result (under development).
+* [*provDebugR*](https://github.com/End-to-end-provenance/provDebugR/blob/master/README.md) uses the provenance collected by rdtLite or rdt to support time-traveling debugging of an R script without the need to set breakpoints or insert print statements and rerun the script.
 
-* [*provDebugR*](https://github.com/End-to-end-provenance/provDebugR/blob/master/README.md) uses the provenance collected by rdtLite or rdt to support time-traveling debugging of an R script without the need to set breakpoints or insert print statements and rerun the script (under development).
+* [*provExplainR*](https://github.com/End-to-end-provenance/provExplainR/blob/master/README.md) uses the provenance collected by rdtLite or rdt from two different executions of a script to help explain why the script results differ.
+
+* [*provClean*](https://github.com/End-to-end-provenance/provClean/blob/master/README.md) uses the provenance collected by rdtLite or rdt to create a simplified version of the original R script that contains only those statements needed to produce a specified result (under development).
 
 ## Installation
 
 Our tools are implemented as R packages. To get the most recent versions, we recommend installing them from GitHub using the install_github function in the devtools package:
 
-* *rdtLite:* `install_github("End-to-end-provenance/rdtLite")`
-* *rdt:* `install_github("End-to-end-provenance/rdt")`
-* *provSummarizeR:* `install_github("End-to-end-provenance/provSummarizeR")`
-* *provViz:* `install_github("End-to-end-provenance/provViz")`
-* *provClean:* `install_github("End-to-end-provenance/provClean")`
-* *provDebugR:* `install_github("End-to-end-provenance/provDebugR")`
+* *rdtLite:* `devtools::install_github("End-to-end-provenance/rdtLite")`
+* *rdt:* `devtools::install_github("End-to-end-provenance/rdt")`
+* *provSummarizeR:* `devtools::install_github("End-to-end-provenance/provSummarizeR")`
+* *provViz:* `devtools::install_github("End-to-end-provenance/provViz")`
+* *provDebugR:* `devtools::install_github("End-to-end-provenance/provDebugR")`
+* *provExplainR:* `devtools::install_github("End-to-end-provenance/provExplainR")`
+* *provClean:* `devtools::install_github("End-to-end-provenance/provClean")`
 
-Note: provSummarizeR requires the provParseR package. provClean and provDebugR require both provParseR and provGraphR. If these do not install automatically they may be installed as follows:
+Note: provSummarizeR and provExplainR require the provParseR package. provClean and provDebugR require both provParseR and provGraphR. If these do not install automatically they may be installed as follows:
 
-* *provParseR:* `install_github("End-to-end-provenance/provParseR")`
-* *provGraphR:* `install_github("End-to-end-provenance/provGraphR")`
+* *provParseR:* `devtools::install_github("End-to-end-provenance/provParseR")`
+* *provGraphR:* `devtools::install_github("End-to-end-provenance/provGraphR")`
 
 *rdtLite*, *provSummarizeR*, *provViz*, and *provParseR* are also available on [*CRAN*](https://cran.r-project.org/).
 
