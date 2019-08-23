@@ -45,8 +45,8 @@ We recommend starting with the *rdtLite* package, which collects enough provenan
 
 * The *RDataTracker* repository contains the necessary files to build and install *rdt* and *rdtLite* and to run extensive regression tests using Apache Ant. To do this, clone the *RDataTracker* repo and see the file README_Build_and_Test.md.
 
-* The *provParseR* package facilitates access to the provenance information collected by rdt and rdtLite. The prov.parse function accepts this information as a string or file in extended PROV-JSON format and returns it as an R object. Access functions then extract the desired information from this object and returns it as a data frame. This package supports other packages and is not intended to be used directly.
+* The [*provParseR*](https://github.com/End-to-end-provenance/provParseR/blob/master/README.md) package facilitates access to the provenance information collected by rdt and rdtLite. The prov.parse function accepts this information as a string or file in extended PROV-JSON format and returns it as an R object. Access functions then extract the desired information from this object and returns it as a data frame. This package supports other packages and is not intended to be used directly.
 
-* The *provGraphR* package creates an adjacency matrix from the provenance object created by provParseR.  The adjacency matrix can then be used to quickly traverse the provenance graph. This package supports other packages and is not intended to be used directly.
+* The [*provGraphR*](https://github.com/End-to-end-provenance/provGraphR/blob/master/README.md) package creates an adjacency matrix from the provenance object created by provParseR.  The adjacency matrix can then be used to quickly traverse the provenance graph. This package supports other packages and is not intended to be used directly.
 
 * We welcome comments on the [extended PROV-JSON](https://github.com/End-to-end-provenance/ExtendedProvJson/blob/master/JSON-format.md) format used by our provenance collection tools and applications
