@@ -1,3 +1,5 @@
+![fruits of provenance](fruits-of-provenance.png)
+
 ## Provenance Tools for R
 
 Our tools for the R statistical language are part of a larger project on [End-to-end-provenance](https://github.com/End-to-end-provenance/End-to-end-provenance.github.io/blob/master/README.md). Please see below for a brief description  of these tools. Additional information may be found in the README files on the various repositories. For details on individual functions, please see the man pages for each package. Note that exported functions generally begin with "prov." to avoid confusion with variable or function names in your scripts or in other libraries.
@@ -14,6 +16,10 @@ Our tools for the R statistical language are part of a larger project on [End-to
 
 * [*provExplainR*](https://github.com/End-to-end-provenance/provExplainR/blob/master/README.md) uses the provenance collected by rdtLite or rdt from two different executions of a script to help explain why the script results differ.
 
+* [*provTraceR*](https://github.com/End-to-end-provenance/provTraceR/blob/master/README.md) uses the provenance collected by rdtLite or rdt for a single R script or a series of R scripts to identify input files, output files, and exchanged files based on file hash values.
+
+* [*provAnalyzeR*](https://github.com/End-to-end-provenance/provAnalyzeR/blob/master/README.md) uses the provenance collected by rdtLite or rdt to identify and report coding anomalies (under development).
+
 * [*provClean*](https://github.com/End-to-end-provenance/provClean/blob/master/README.md) uses the provenance collected by rdtLite or rdt to create a simplified version of the original R script that contains only those statements needed to produce a specified result (under development).
 
 ## Installation
@@ -26,9 +32,11 @@ Our tools are implemented as R packages. To get the most recent versions, we rec
 * *provViz:* `devtools::install_github("End-to-end-provenance/provViz")`
 * *provDebugR:* `devtools::install_github("End-to-end-provenance/provDebugR")`
 * *provExplainR:* `devtools::install_github("End-to-end-provenance/provExplainR")`
+* *provTraceR:* `devtools::install_github("End-to-end-provenance/provTraceR")`
+* *provAnalyzeR:* `devtools::install_github("End-to-end-provenance/provAnalyzeR")`
 * *provClean:* `devtools::install_github("End-to-end-provenance/provClean")`
 
-Note: provSummarizeR and provExplainR require the provParseR package. provClean and provDebugR require both provParseR and provGraphR. If these do not install automatically they may be installed as follows:
+Note: provSummarizeR, provExplainR, provTraceR, and provAnalyzeR require the provParseR package. provClean and provDebugR require both provParseR and provGraphR. If these do not install automatically they may be installed as follows:
 
 * *provParseR:* `devtools::install_github("End-to-end-provenance/provParseR")`
 * *provGraphR:* `devtools::install_github("End-to-end-provenance/provGraphR")`
@@ -50,3 +58,6 @@ We recommend starting with the *rdtLite* package, which collects enough provenan
 * The [*provGraphR*](https://github.com/End-to-end-provenance/provGraphR/blob/master/README.md) package creates an adjacency matrix from the provenance object created by provParseR.  The adjacency matrix can then be used to quickly traverse the provenance graph. This package supports other packages and is not intended to be used directly.
 
 * We welcome comments on the [extended PROV-JSON](https://github.com/End-to-end-provenance/ExtendedProvJson/blob/master/JSON-format.md) format used by our provenance collection tools and applications
+
+Tree silhouette from: http://www.vinylsilhouettes.com
+
