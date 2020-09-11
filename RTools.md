@@ -41,7 +41,7 @@ Note: provSummarizeR, provExplainR, provTraceR, and provAnalyzeR require the pro
 * *provParseR:* `devtools::install_github("End-to-end-provenance/provParseR")`
 * *provGraphR:* `devtools::install_github("End-to-end-provenance/provGraphR")`
 
-*rdtLite*, *provSummarizeR*, *provViz*, and *provParseR* are also available on [*CRAN*](https://cran.r-project.org/).
+*rdtLite*, *provSummarizeR*, *provViz*, *provTraceR*, *provParseR*, and *provGraphR* are also available on [*CRAN*](https://cran.r-project.org/).
 
 ## Getting Started
 
