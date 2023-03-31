@@ -19,15 +19,12 @@ Our goal in this project is to design, build, and study an end-to-end system tha
 
 * [Emery Boose](https://harvardforest2.fas.harvard.edu/asp/hf/php/researcher_profile1.php?id=9), Harvard University
 * [Aaron Ellison](https://harvardforest.fas.harvard.edu/aaron-ellison), Harvard University
-* [Elizabeth Fong](https://www.linkedin.com/in/elizabethfongwm). Mount Holyoke College
+* Sean Fabrega, Mount Holyoke College
 * [Xueyuan (Michael) Han](https://scholar.harvard.edu/han/home), Harvard University
 * Matthew Lau, Chinese Academy of Sciences
 * [Barbara Lerner](https://www.mtholyoke.edu/%7Eblerner/), Mount Holyoke College
-* Khanh Ngo, Mount Holyoke College
 * [Thomas Pasquier](https://www.cl.cam.ac.uk/%7Etfjmp2/), University of Bristol
-* Huiyun Peng, Mount Holyoke College
 * [Margo Seltzer](https://www.seltzer.com/margo/), The University of British Columbia
-* Rose Sheehan, Mount Holyoke College
 * [Joseph Wonsil](https://jwons.github.io/), The University of British Columbia
 
 ## Past Contributors
@@ -36,17 +33,21 @@ Our goal in this project is to design, build, and study an end-to-end system tha
 * Orenna Brand, Columbia University
 * Vasco Carinhas, Universidad de Puerto Rico en Arecibo
 * Marios Dardas, Holy Cross College
+* [Elizabeth Fong](https://www.linkedin.com/in/elizabethfongwm). Mount Holyoke College
 * Connor Gregorich-Trevor, Grinnell College
 * Nikki Hoffler, Mount Holyoke College
 * Jen Johnson, Middlebury College
 * Andy Kaldunski, Ripon College
 * Alex Liu, Amherst College
+* Khanh Ngo, Mount Holyoke College
 * Erick Oduniyi, University of Kansas
 * Miruna Oprescu, Harvard University
+* Huiyun Peng, Mount Holyoke College
 * Luis Perez, Harvard University
 * Lia Poulos, Mount Holyoke College
 * Moe Pwint Phyu, Mount Holyoke College
 * Garrett Rosenblatt, University of Rochester
+* Rose Sheehan, Mount Holyoke College
 * Sofiya Taskova, Mount Holyoke College
 * Cory Teshera-Sterne, Mount Holyoke Colege
 * Morgan Vigil, Westmont College
@@ -54,6 +55,9 @@ Our goal in this project is to design, build, and study an end-to-end system tha
 * Yujia Zhou, Dickinson College
 
 ## Publications
+
+2022
+* Barbara Lerner, Emery Boose, Orenna Brand, Aaron M. Ellison, Elizabeth Fong, Matthew Lau, Khanh Ngo, Thomas Pasquier, Luis A. Perez, Margo Seltzer, Rose Sheehan and Joseph Wonsil , [Making Provenance Work for You](https://journal.r-project.org/articles/RJ-2023-003/), The R Journal, Volume 14, Number 4, December 2022, pages 141-159.
 
 2020
 * Xueyuan Han, James Mickens, Ashish Gehani, Margo Seltzer, and Thomas Pasquier. 2020. [Xanthus: Push-button Orchestration of Host Provenance Data Collection](https://www.seltzer.com/assets/publications/precs2020-xanthus.pdf) Proceedings of the Third Annual Workshop on Practical Reproducible Evaluation of Computer Systems (Co-located with HPDC 2020).
